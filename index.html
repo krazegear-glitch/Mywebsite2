@@ -3,9 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shrigobishan | Delivery Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Shrigobishan | Premium Delivery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background: #0a0a0a;
@@ -14,13 +20,32 @@ body {
 }
 
 section {
-    padding: 80px 20px;
+    padding: 100px 20px;
     text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeIn 1s forwards;
+}
+
+section:nth-child(1) { animation-delay: 0.2s; }
+section:nth-child(2) { animation-delay: 0.4s; }
+section:nth-child(3) { animation-delay: 0.6s; }
+section:nth-child(4) { animation-delay: 0.8s; }
+section:nth-child(5) { animation-delay: 1s; }
+section:nth-child(6) { animation-delay: 1.2s; }
+section:nth-child(7) { animation-delay: 1.4s; }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 h1, h2 {
     font-family: 'Playfair Display', serif;
     color: #d4af37;
+    letter-spacing: 1px;
 }
 
 .hero {
@@ -29,29 +54,36 @@ h1, h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #000000, #111111);
+    background: radial-gradient(circle at top, #111 0%, #000 70%);
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 .hero p {
     font-size: 1.2rem;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .highlight {
     color: #d4af37;
+    font-weight: 600;
 }
 
 .card {
     background: #141414;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 500px;
-    border-radius: 10px;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 550px;
+    border-radius: 12px;
     border: 1px solid #d4af37;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+    transform: translateY(-5px);
 }
 
 .contact {
@@ -61,12 +93,18 @@ h1, h2 {
 a {
     color: #d4af37;
     text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-shadow: 0 0 8px #d4af37;
 }
 
 .footer {
     padding: 20px;
     font-size: 0.8rem;
     background: #000;
+    text-align: center;
 }
 </style>
 </head>
@@ -79,19 +117,19 @@ a {
 </section>
 
 <section>
-    <h2>About Me</h2>
+    <h2>About</h2>
     <div class="card">
-        I specialize in secure and reliable supplement deliveries across Colombo.
-        Focused on performance nutrition products with 100% successful delivery rate.
+        Specialized in secure and professional supplement deliveries across Colombo.
+        Precision handling. Reliable timing. Trusted service.
     </div>
 </section>
 
 <section>
-    <h2>January 2026 Performance</h2>
+    <h2>Performance — January 2026</h2>
     <div class="card">
         ✔ 10 Orders Delivered<br>
         ✔ Zero Product Damage<br>
-        ✔ On-Time Completion<br>
+        ✔ 100% On-Time Completion<br>
         ✔ 100% Client Satisfaction
     </div>
 </section>
@@ -106,23 +144,23 @@ a {
 </section>
 
 <section>
-    <h2>Skills</h2>
+    <h2>Professional Skills</h2>
     <div class="card">
         Route Optimization<br>
-        Product Handling & Care<br>
-        Customer Communication<br>
+        Product Handling & Safety<br>
+        Client Communication<br>
         Cash Handling<br>
         Time Management
     </div>
 </section>
 
 <section>
-    <h2>Testimonials</h2>
+    <h2>Client Testimonials</h2>
     <div class="card">
-        "Delivered on time and in perfect condition. Very professional."
+        "Delivered on time and in perfect condition. Highly professional."
     </div>
     <div class="card">
-        "Fast response and reliable service. Highly recommended."
+        "Fast, reliable, and trustworthy service. Recommended."
     </div>
 </section>
 
