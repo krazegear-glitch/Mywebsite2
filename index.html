@@ -1,188 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KRAZE | Shrigobishan Udhayakumar</title>
-<style>
-/* --- GLOBAL --- */
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #0d0d0d;
-    color: #f5f5f5;
-    scroll-behavior: smooth;
-}
-.container {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-}
-
-/* --- NAVIGATION --- */
-nav {
-    padding: 20px 0;
-    text-align: right;
-    position: sticky;
-    top: 0;
-    background: #0d0d0d;
-    z-index: 100;
-}
-nav a {
-    color: #aaa;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 14px;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-nav a:hover {
-    color: #e50914;
-}
-
-/* --- HERO --- */
-.hero {
-    padding: 100px 0 50px 0;
-    text-align: center;
-}
-.hero img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 2px solid #e50914;
-    margin-bottom: 20px;
-}
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-.hero p {
-    font-size: 18px;
-    color: #aaa;
-    max-width: 600px;
-    margin: auto;
-}
-
-/* --- SECTIONS --- */
-.section {
-    padding: 80px 0;
-    border-top: 1px solid #1a1a1a;
-}
-.section h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
-}
-
-/* --- PROJECT CARDS --- */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-.project-card {
-    background: #1a1a1a;
-    padding: 20px;
-    border-radius: 12px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(229,9,20,0.3);
-}
-.project-card h3 {
-    margin-top: 0;
-    font-size: 18px;
-    color: #fff;
-}
-.project-card p {
-    font-size: 14px;
-    color: #ccc;
-}
-
-/* --- FOOTER --- */
-footer {
-    padding: 40px 0;
-    border-top: 1px solid #1a1a1a;
-    font-size: 14px;
-    color: #777;
-    text-align: center;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shrigobishan – Supplement Deliverer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<div class="container">
+  <!-- Hero Section -->
+  <section id="hero" class="fade-in">
+    <div class="container">
+      <h1>Reliable. Fast. Trusted – Delivering Your Supplements with Care</h1>
+      <p>Specialized in handling premium fitness supplements safely and on time.</p>
+      <a href="#contact" class="btn">Book a Delivery</a>
+    </div>
+  </section>
 
-<nav>
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</nav>
+  <!-- About Section -->
+  <section id="about" class="fade-in">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m a dedicated supplement delivery professional with a focus on reliability, speed, and customer satisfaction. Every order is handled with care, ensuring your fitness journey never misses a step.</p>
+    </div>
+  </section>
 
-<div class="hero">
-<img src="kraze-logo.png" alt="KRAZE Logo" width="120" height="120"><h1>Shrigobishan Udhayakumar</h1>
-<p>
-Self-taught developer building digital systems, learning relentlessly,
-and creating leverage through technology.
-</p>
-</div>
+  <!-- Skills Section -->
+  <section id="skills" class="fade-in">
+    <div class="container">
+      <h2>Skills & Expertise</h2>
+      <ul>
+        <li>Fast & reliable delivery</li>
+        <li>Knowledgeable in fitness supplements</li>
+        <li>Professional communication</li>
+        <li>Product safety and handling</li>
+      </ul>
+    </div>
+  </section>
 
-<div class="section" id="about">
-<h2>About</h2><p>
-Focused on mastering software engineering, building scalable assets,
-and designing systems that create long-term impact.
-Currently sharpening skills in web development, automation, and faceless brand building.
-</p>
-</div>
+  <!-- Projects Section -->
+  <section id="projects" class="fade-in">
+    <div class="container">
+      <h2>Delivery Experience – January 2026</h2>
+      <table>
+        <tr>
+          <th>Product Delivered</th>
+          <th>Quantity</th>
+          <th>Brand</th>
+        </tr>
+        <tr>
+          <td>Creatine Monohydrate</td>
+          <td>3</td>
+          <td>Applied Nutrition</td>
+        </tr>
+        <tr>
+          <td>Pre-Workout C4</td>
+          <td>4</td>
+          <td>Cellucor</td>
+        </tr>
+        <tr>
+          <td>Protein Powder</td>
+          <td>3</td>
+          <td>Applied Nutrition</td>
+        </tr>
+      </table>
+    </div>
+  </section>
 
-<div class="section" id="projects">
-<h2>Projects</h2>
-<div class="projects-grid">
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="fade-in">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <blockquote>“Shrigobishan is always punctual and professional. My supplements arrive safely every time!”</blockquote>
+      <blockquote>“Reliable service with attention to detail. Highly recommended!”</blockquote>
+      <blockquote>“Fast delivery and trustworthy. Made my supplement routine stress-free.”</blockquote>
+    </div>
+  </section>
 
-<div class="project-card">
-<h3>Portfolio Website</h3>
-<p>Built and deployed from a smartphone using GitHub Pages — proof of hustle.</p>
-</div>
-
-<div class="project-card">
-<h3>KRAZE Genesis Collection</h3>
-<p>Luxury streetwear brand project — authenticity cards, mockups, and branding.</p>
-</div>
-
-<div class="project-card">
-<h3>Automation Tools</h3>
-<p>Scripts and systems to automate repetitive tasks — ongoing builds.</p>
-</div>
-
-<div class="project-card">
-<h3>Personal Blog</h3>
-<p>Blog platform built to share tutorials, knowledge, and insights.</p>
-</div>
-
-<div class="project-card">
-<h3>YouTube Automation Bot</h3>
-<p>Bot to download, organize, and automate content posting efficiently.</p>
-</div>
-
-<div class="project-card">
-<h3>Coming Soon</h3>
-<p>Future projects will be added here as I build and deploy them.</p>
-</div>
-
-</div>
-</div>
-
-<div class="section" id="contact">
-<h2>Contact</h2>
-<p>Email: krazegear@gmail.com</p>
-</div>
-
-<footer>
-© 2026 Shrigobishan | KRAZE — Built with discipline.
-</footer>
-
-</div>
+  <!-- Contact Section -->
+  <section id="contact" class="fade-in">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:shrigobishan1@gmail.com">shrigobishan1@gmail.com</a></p>
+      <p>WhatsApp: <a href="tel:+94741181579">+94 741181579</a></p>
+      <a href="mailto:shrigobishan1@gmail.com" class="btn">Book a Delivery</a>
+    </div>
+  </section>
 
 </body>
 </html>
