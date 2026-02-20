@@ -3,49 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shrigobishan | Premium Delivery</title>
+<title>Shrigobishan | Luxury Fitness Logistics</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
     margin: 0;
-    background: #0a0a0a;
+    background: #0b0b0b;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 section {
-    padding: 100px 20px;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(40px);
-    animation: fadeIn 1s forwards;
-}
-
-section:nth-child(1) { animation-delay: 0.2s; }
-section:nth-child(2) { animation-delay: 0.4s; }
-section:nth-child(3) { animation-delay: 0.6s; }
-section:nth-child(4) { animation-delay: 0.8s; }
-section:nth-child(5) { animation-delay: 1s; }
-section:nth-child(6) { animation-delay: 1.2s; }
-section:nth-child(7) { animation-delay: 1.4s; }
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    padding: 100px 10%;
 }
 
 h1, h2 {
     font-family: 'Playfair Display', serif;
     color: #d4af37;
-    letter-spacing: 1px;
+    margin-bottom: 20px;
 }
 
 .hero {
@@ -53,7 +32,6 @@ h1, h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     background: radial-gradient(circle at top, #111 0%, #000 70%);
 }
 
@@ -62,8 +40,9 @@ h1, h2 {
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-top: 15px;
+    max-width: 600px;
+    line-height: 1.6;
+    font-size: 1.1rem;
 }
 
 .highlight {
@@ -71,40 +50,55 @@ h1, h2 {
     font-weight: 600;
 }
 
+.divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d4af37, transparent);
+    margin: 60px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
 .card {
     background: #141414;
-    padding: 25px;
-    margin: 25px auto;
-    max-width: 550px;
+    padding: 30px;
     border-radius: 12px;
-    border: 1px solid #d4af37;
-    transition: all 0.3s ease;
+    border: 1px solid rgba(212,175,55,0.3);
+    transition: 0.3s ease;
 }
 
 .card:hover {
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+    border: 1px solid #d4af37;
+    box-shadow: 0 0 25px rgba(212,175,55,0.5);
     transform: translateY(-5px);
 }
 
-.contact {
-    background: #111111;
+ul {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.contact-box {
+    background: #111;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #d4af37;
+    max-width: 500px;
 }
 
 a {
     color: #d4af37;
     text-decoration: none;
-    font-weight: 600;
-}
-
-a:hover {
-    text-shadow: 0 0 8px #d4af37;
 }
 
 .footer {
-    padding: 20px;
-    font-size: 0.8rem;
-    background: #000;
     text-align: center;
+    padding: 30px;
+    background: #000;
+    font-size: 0.9rem;
 }
 </style>
 </head>
@@ -112,68 +106,107 @@ a:hover {
 
 <section class="hero">
     <h1>Shrigobishan Udhayakumar</h1>
-    <p>Premium Supplement Delivery Specialist</p>
-    <p class="highlight">10 Orders Delivered — January 2026</p>
+    <p>Luxury Fitness Supplement Logistics Specialist</p>
+    <p class="highlight">January 2026 — 10 Verified Deliveries | 100% On-Time | Zero Damage</p>
 </section>
 
+<div class="divider"></div>
+
 <section>
-    <h2>About</h2>
-    <div class="card">
-        Specialized in secure and professional supplement deliveries across Colombo.
-        Precision handling. Reliable timing. Trusted service.
+    <h2>Positioning</h2>
+    <p>
+        Specializing in high-performance sports nutrition delivery across Colombo.
+        Handling premium supplements including creatine, pre-workouts, and protein powders with professional standards and reliability.
+    </p>
+</section>
+
+<div class="divider"></div>
+
+<section>
+    <h2>January 2026 Delivery Report</h2>
+    <div class="grid">
+        <div class="card">
+            <strong>Total Orders</strong><br><br>
+            10 Completed Deliveries
+        </div>
+        <div class="card">
+            <strong>Performance Standard</strong><br><br>
+            100% On-Time Rate
+        </div>
+        <div class="card">
+            <strong>Product Safety</strong><br><br>
+            Zero Damage Incidents
+        </div>
+        <div class="card">
+            <strong>Client Satisfaction</strong><br><br>
+            100% Positive Feedback
+        </div>
     </div>
 </section>
 
-<section>
-    <h2>Performance — January 2026</h2>
-    <div class="card">
-        ✔ 10 Orders Delivered<br>
-        ✔ Zero Product Damage<br>
-        ✔ 100% On-Time Completion<br>
-        ✔ 100% Client Satisfaction
-    </div>
-</section>
+<div class="divider"></div>
 
 <section>
     <h2>Products Delivered</h2>
-    <div class="card">
-        Applied Nutrition Creatine Monohydrate<br>
-        C4 Pre-Workout<br>
-        Applied Nutrition Protein Powder
+    <div class="grid">
+        <div class="card">Applied Nutrition Creatine Monohydrate</div>
+        <div class="card">C4 Pre-Workout</div>
+        <div class="card">Applied Nutrition Protein Powder</div>
     </div>
 </section>
+
+<div class="divider"></div>
 
 <section>
-    <h2>Professional Skills</h2>
-    <div class="card">
-        Route Optimization<br>
-        Product Handling & Safety<br>
-        Client Communication<br>
-        Cash Handling<br>
-        Time Management
-    </div>
+    <h2>Delivery Process</h2>
+    <ul>
+        <li>Order Confirmation & Verification</li>
+        <li>Product Integrity Check</li>
+        <li>Secure & Safe Transport</li>
+        <li>On-Time Delivery Execution</li>
+        <li>Completion Confirmation</li>
+    </ul>
 </section>
+
+<div class="divider"></div>
 
 <section>
-    <h2>Client Testimonials</h2>
-    <div class="card">
-        "Delivered on time and in perfect condition. Highly professional."
-    </div>
-    <div class="card">
-        "Fast, reliable, and trustworthy service. Recommended."
+    <h2>Professional Strengths</h2>
+    <ul>
+        <li>Route Optimization</li>
+        <li>Precision Product Handling</li>
+        <li>Clear Client Communication</li>
+        <li>Cash Handling Accuracy</li>
+        <li>Discipline & Time Management</li>
+    </ul>
+</section>
+
+<div class="divider"></div>
+
+<section>
+    <h2>Testimonials</h2>
+    <div class="grid">
+        <div class="card">
+            "Delivered on time and in perfect condition. Highly professional."
+        </div>
+        <div class="card">
+            "Reliable and trustworthy service. Would recommend."
+        </div>
     </div>
 </section>
 
-<section class="contact">
+<div class="divider"></div>
+
+<section>
     <h2>Contact</h2>
-    <div class="card">
-        Email: <a href="mailto:shrigobishan1@gmail.com">shrigobishan1@gmail.com</a><br>
+    <div class="contact-box">
+        Email: shrigobishan1@gmail.com<br><br>
         Phone: +94 741 181 579
     </div>
 </section>
 
 <div class="footer">
-    © 2026 Shrigobishan Udhayakumar — Premium Delivery Portfolio
+    © 2026 Shrigobishan Udhayakumar — Luxury Fitness Logistics Portfolio
 </div>
 
 </body>
