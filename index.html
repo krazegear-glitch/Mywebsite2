@@ -198,3 +198,191 @@ faders.forEach(fader => {
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KRAZE Premium Supplements</title>
+  <style>
+    /* Global styles */
+    body {
+      background: #111;
+      font-family: 'Helvetica Neue', sans-serif;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 40px 20px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      letter-spacing: 2px;
+      color: #e60000;
+    }
+
+    header p {
+      font-size: 16px;
+      color: #aaa;
+      margin-top: 10px;
+    }
+
+    /* Products section */
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .product-card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      width: 280px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      margin: 10px 0 5px 0;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .product-card p {
+      color: #aaa;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .product-card button {
+      background: #e60000;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .product-card button:hover {
+      background: #ff1a1a;
+      transform: scale(1.05);
+    }
+
+    /* Hover effect for card */
+    .product-card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 12px 30px rgba(255,0,0,0.5);
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .products {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+      }
+      .product-card {
+        width: 90%;
+      }
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>KRAZE Supplements</h1>
+    <p>Luxury fitness nutrition for your premium lifestyle</p>
+  </header>
+
+  <!-- Products -->
+  <section class="products">
+
+    <div class="product-card">
+      <img src="images/protein.png" alt="Premium Protein Powder">
+      <h3>Premium Protein Powder</h3>
+      <p>High-quality protein for your fitness journey.</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/vitamins.jpg" alt="Daily Vitamins">
+      <h3>Daily Vitamins</h3>
+      <p>Boost your immunity with essential nutrients.</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/bcaa.png" alt="BCAA Energy">
+      <h3>BCAA Energy</h3>
+      <p>Fuel your workouts and recover faster.</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/preworkout.jpg" alt="Pre-Workout Formula">
+      <h3>Pre-Workout Formula</h3>
+      <p>Explosive energy and focus for intense sessions.</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/omega.png" alt="Omega 3 Capsules">
+      <h3>Omega 3 Capsules</h3>
+      <p>Supports heart, brain, and joint health.</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/multivitamins.jpg" alt="Advanced Multivitamins">
+      <h3>Advanced Multivitamins</h3>
+      <p>Complete daily nutrition in one capsule.</p>
+      <button>Buy Now</button>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 KRAZE Supplements | All rights reserved
+  </footer>
+
+</body>
+</html>
