@@ -3,211 +3,198 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shrigobishan | Luxury Fitness Logistics</title>
+<title>Shrigobishan | Performance Logistics</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-    margin: 0;
-    background: #0b0b0b;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
 }
 
 section {
-    padding: 100px 10%;
-}
-
-h1, h2 {
-    font-family: 'Playfair Display', serif;
-    color: #d4af37;
-    margin-bottom: 20px;
+  padding: 120px 12%;
 }
 
 .hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: radial-gradient(circle at top, #111 0%, #000 70%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  max-width: 700px;
 }
 
 .hero p {
-    max-width: 600px;
-    line-height: 1.6;
-    font-size: 1.1rem;
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-top: 20px;
+  max-width: 500px;
 }
 
-.highlight {
-    color: #d4af37;
-    font-weight: 600;
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
 }
 
-.divider {
-    height: 1px;
-    background: linear-gradient(to right, transparent, #d4af37, transparent);
-    margin: 60px 0;
+.fade.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+.stats {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 
-.card {
-    background: #141414;
-    padding: 30px;
-    border-radius: 12px;
-    border: 1px solid rgba(212,175,55,0.3);
-    transition: 0.3s ease;
+.stat h2 {
+  font-size: 2.5rem;
+  margin: 0;
 }
 
-.card:hover {
-    border: 1px solid #d4af37;
-    box-shadow: 0 0 25px rgba(212,175,55,0.5);
-    transform: translateY(-5px);
+.stat p {
+  color: #888;
+  margin-top: 8px;
 }
 
-ul {
-    padding-left: 20px;
-    line-height: 1.8;
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
 }
 
-.contact-box {
-    background: #111;
-    padding: 40px;
-    border-radius: 12px;
-    border: 1px solid #d4af37;
-    max-width: 500px;
+.product {
+  background: #111;
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.product h3 {
+  margin: 0 0 10px 0;
+}
+
+.testimonial {
+  font-size: 1.5rem;
+  font-weight: 300;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.contact {
+  font-size: 1.2rem;
 }
 
 a {
-    color: #d4af37;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #444;
 }
 
-.footer {
-    text-align: center;
-    padding: 30px;
-    background: #000;
-    font-size: 0.9rem;
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 0.9rem;
 }
 </style>
 </head>
 <body>
 
 <section class="hero">
-    <h1>Shrigobishan Udhayakumar</h1>
-    <p>Luxury Fitness Supplement Logistics Specialist</p>
-    <p class="highlight">January 2026 — 10 Verified Deliveries | 100% On-Time | Zero Damage</p>
+  <h1>Delivering Performance.<br>Without Compromise.</h1>
+  <p>Luxury fitness supplement logistics. Precision. Reliability. Discipline.</p>
 </section>
 
-<div class="divider"></div>
-
-<section>
-    <h2>Positioning</h2>
-    <p>
-        Specializing in high-performance sports nutrition delivery across Colombo.
-        Handling premium supplements including creatine, pre-workouts, and protein powders with professional standards and reliability.
-    </p>
-</section>
-
-<div class="divider"></div>
-
-<section>
-    <h2>January 2026 Delivery Report</h2>
-    <div class="grid">
-        <div class="card">
-            <strong>Total Orders</strong><br><br>
-            10 Completed Deliveries
-        </div>
-        <div class="card">
-            <strong>Performance Standard</strong><br><br>
-            100% On-Time Rate
-        </div>
-        <div class="card">
-            <strong>Product Safety</strong><br><br>
-            Zero Damage Incidents
-        </div>
-        <div class="card">
-            <strong>Client Satisfaction</strong><br><br>
-            100% Positive Feedback
-        </div>
+<section class="fade">
+  <div class="stats">
+    <div class="stat">
+      <h2>10</h2>
+      <p>Orders — January 2026</p>
     </div>
-</section>
-
-<div class="divider"></div>
-
-<section>
-    <h2>Products Delivered</h2>
-    <div class="grid">
-        <div class="card">Applied Nutrition Creatine Monohydrate</div>
-        <div class="card">C4 Pre-Workout</div>
-        <div class="card">Applied Nutrition Protein Powder</div>
+    <div class="stat">
+      <h2>100%</h2>
+      <p>On-Time Rate</p>
     </div>
-</section>
-
-<div class="divider"></div>
-
-<section>
-    <h2>Delivery Process</h2>
-    <ul>
-        <li>Order Confirmation & Verification</li>
-        <li>Product Integrity Check</li>
-        <li>Secure & Safe Transport</li>
-        <li>On-Time Delivery Execution</li>
-        <li>Completion Confirmation</li>
-    </ul>
-</section>
-
-<div class="divider"></div>
-
-<section>
-    <h2>Professional Strengths</h2>
-    <ul>
-        <li>Route Optimization</li>
-        <li>Precision Product Handling</li>
-        <li>Clear Client Communication</li>
-        <li>Cash Handling Accuracy</li>
-        <li>Discipline & Time Management</li>
-    </ul>
-</section>
-
-<div class="divider"></div>
-
-<section>
-    <h2>Testimonials</h2>
-    <div class="grid">
-        <div class="card">
-            "Delivered on time and in perfect condition. Highly professional."
-        </div>
-        <div class="card">
-            "Reliable and trustworthy service. Would recommend."
-        </div>
+    <div class="stat">
+      <h2>0</h2>
+      <p>Damage Incidents</p>
     </div>
+  </div>
 </section>
 
-<div class="divider"></div>
-
-<section>
-    <h2>Contact</h2>
-    <div class="contact-box">
-        Email: shrigobishan1@gmail.com<br><br>
-        Phone: +94 741 181 579
+<section class="fade">
+  <div class="products">
+    <div class="product">
+      <h3>Creatine Monohydrate</h3>
+      <p>Handled with secure transport and product integrity focus.</p>
     </div>
+    <div class="product">
+      <h3>C4 Pre-Workout</h3>
+      <p>Time-sensitive delivery with performance-level care.</p>
+    </div>
+    <div class="product">
+      <h3>Protein Powder</h3>
+      <p>Professional handling to maintain packaging quality.</p>
+    </div>
+  </div>
 </section>
 
-<div class="footer">
-    © 2026 Shrigobishan Udhayakumar — Luxury Fitness Logistics Portfolio
-</div>
+<section class="fade">
+  <div class="testimonial">
+    “Delivered on time and in perfect condition. Highly professional and reliable.”
+  </div>
+</section>
+
+<section class="fade contact">
+  Contact<br><br>
+  shrigobishan1@gmail.com<br>
+  +94 741 181 579
+</section>
+
+<footer>
+  © 2026 Shrigobishan Udhayakumar
+</footer>
+
+<script>
+const faders = document.querySelectorAll('.fade');
+
+const appearOptions = {
+  threshold: 0.2
+};
+
+const appearOnScroll = new IntersectionObserver(function(
+  entries,
+  appearOnScroll
+) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add('visible');
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+}, appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+</script>
 
 </body>
 </html>
