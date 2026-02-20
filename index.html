@@ -4,13 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shrigobishan | Builder</title>
-
 <style>
+/* --- GLOBAL --- */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background: #0d0d0d;
     color: #f5f5f5;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -19,57 +20,95 @@ body {
     margin: auto;
 }
 
+/* --- NAVIGATION --- */
 nav {
     padding: 20px 0;
     text-align: right;
+    position: sticky;
+    top: 0;
+    background: #0d0d0d;
+    z-index: 100;
 }
-
 nav a {
     color: #aaa;
     text-decoration: none;
     margin-left: 20px;
     font-size: 14px;
+    transition: color 0.3s;
 }
-
 nav a:hover {
-    color: white;
+    color: #fff;
 }
 
+/* --- HERO --- */
 .hero {
     padding: 120px 0;
+    text-align: center;
 }
-
 .hero h1 {
     font-size: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
-
 .hero p {
     font-size: 18px;
     color: #aaa;
     max-width: 600px;
+    margin: auto;
 }
 
+/* --- PROFILE IMAGE --- */
+.profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    border: 2px solid #e50914; /* subtle red accent */
+}
+
+/* --- SECTIONS --- */
 .section {
     padding: 80px 0;
     border-top: 1px solid #1a1a1a;
 }
-
 .section h2 {
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.project {
-    margin-bottom: 20px;
+/* --- PROJECT CARDS --- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+.project-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255,0,0,0.2);
+}
+.project-card h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #fff;
+}
+.project-card p {
+    font-size: 14px;
     color: #ccc;
 }
 
+/* --- FOOTER --- */
 footer {
     padding: 40px 0;
     border-top: 1px solid #1a1a1a;
     font-size: 14px;
     color: #777;
+    text-align: center;
 }
 </style>
 </head>
@@ -85,6 +124,7 @@ footer {
 </nav>
 
 <div class="hero">
+<img class="profile" src="https://via.placeholder.com/120" alt="Profile Image">
 <h1>Shrigobishan Udhayakumar</h1>
 <p>
 Self-taught developer building digital systems, learning relentlessly,
@@ -95,25 +135,32 @@ and creating leverage through technology.
 <div class="section" id="about">
 <h2>About</h2>
 <p>
-I’m focused on mastering software engineering, building scalable assets,
+Focused on mastering software engineering, building scalable assets,
 and designing systems that create long-term impact.
-Currently sharpening my skills in web development and automation.
+Currently sharpening skills in web development and automation.
 </p>
 </div>
 
 <div class="section" id="projects">
 <h2>Projects</h2>
+<div class="projects-grid">
 
-<div class="project">
-<strong>Personal Portfolio Website</strong><br>
-Built and deployed using GitHub Pages from a smartphone.
+<div class="project-card">
+<h3>Portfolio Website</h3>
+<p>Built and deployed from a smartphone using GitHub Pages.</p>
 </div>
 
-<div class="project">
-<strong>More coming soon...</strong><br>
-Currently building new web projects and automation tools.
+<div class="project-card">
+<h3>Automation Tools</h3>
+<p>Work in progress: developing scripts to automate repetitive tasks.</p>
 </div>
 
+<div class="project-card">
+<h3>Coming Soon</h3>
+<p>New projects will be added as I build and deploy them.</p>
+</div>
+
+</div>
 </div>
 
 <div class="section" id="contact">
